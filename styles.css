@@ -2,47 +2,91 @@
 
 body {
     font-family: 'Lobster', sans-serif;
-    font-size: 20px; /* Increase base font size for better readability */
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
     color: #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     text-align: center;
 }
 
 button {
-    font-size: 20px; /* Increase button font size */
-    padding: 10px 20px; /* Adjust padding for better touch targets */
+    padding: 10px 20px;
     margin-top: 20px;
 }
 
 p {
     width: 90%;
     max-width: 600px;
+    margin: auto;
 }
 
-/* Adjustments for smaller screens, particularly smartphones */
-@media (max-width: 768px) {
+/* Styles for devices with width 960px to 1024px */
+@media all and (min-width:960px) and (max-width: 1024px) {
     body {
-        font-size: 18px; /* Slightly smaller font size, but still larger than the original for better readability */
+        font-size: 24px;
     }
     button {
-        font-size: 18px; /* Adjust button font size for smaller screens */
+        font-size: 24px;
     }
 }
 
-/* Further adjustments for very small screens or higher DPI devices like iPhone 14 Pro */
-@media (max-width: 375px) {
+/* Styles for devices with width 801px to 959px */
+@media all and (min-width:801px) and (max-width: 959px) {
     body {
-        font-size: 22px; /* Increase font size for very small screens */
+        font-size: 22px;
     }
     button {
-        font-size: 22px; /* Increase button font size for better interaction */
+        font-size: 22px;
+    }
+}
+
+/* Styles for devices with width 769px to 800px */
+@media all and (min-width:769px) and (max-width: 800px) {
+    body {
+        font-size: 20px;
+    }
+    button {
+        font-size: 20px;
+    }
+}
+
+/* Styles for devices with width 569px to 768px */
+@media all and (min-width:569px) and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    button {
+        font-size: 18px;
+    }
+}
+
+/* Styles for devices with width 481px to 568px */
+@media all and (min-width:481px) and (max-width: 568px) {
+    body {
+        font-size: 16px;
+    }
+    button {
+        font-size: 16px;
+    }
+}
+
+/* Styles for devices with width 321px to 480px */
+@media all and (min-width:321px) and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Styles for devices with width up to 320px */
+@media all and (min-width:0px) and (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+    button {
+        font-size: 12px;
     }
 }
