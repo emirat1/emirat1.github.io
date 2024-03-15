@@ -24,69 +24,69 @@ p {
 /* Styles for devices with width 960px to 1024px */
 @media all and (min-width:960px) and (max-width: 1024px) {
     body {
-        font-size: 24px;
+        font-size: 27px;
     }
     button {
-        font-size: 24px;
+        font-size: 27px;
     }
 }
 
 /* Styles for devices with width 801px to 959px */
 @media all and (min-width:801px) and (max-width: 959px) {
     body {
-        font-size: 22px;
+        font-size: 24px;
     }
     button {
-        font-size: 22px;
+        font-size: 24px;
     }
 }
 
 /* Styles for devices with width 769px to 800px */
 @media all and (min-width:769px) and (max-width: 800px) {
     body {
-        font-size: 20px;
+        font-size: 23px;
     }
     button {
-        font-size: 20px;
+        font-size: 23px;
     }
 }
 
 /* Styles for devices with width 569px to 768px */
 @media all and (min-width:569px) and (max-width: 768px) {
     body {
-        font-size: 18px;
+        font-size: 20px;
     }
     button {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
 /* Styles for devices with width 481px to 568px */
 @media all and (min-width:481px) and (max-width: 568px) {
     body {
-        font-size: 16px;
+        font-size: 19px;
     }
     button {
-        font-size: 16px;
+        font-size: 19px;
     }
 }
 
 /* Styles for devices with width 321px to 480px */
 @media all and (min-width:321px) and (max-width: 480px) {
     body {
-        font-size: 14px;
+        font-size: 17px;
     }
     button {
-        font-size: 14px;
+        font-size: 17px;
     }
 }
 
 /* Styles for devices with width up to 320px */
 @media all and (min-width:0px) and (max-width: 320px) {
     body {
-        font-size: 12px;
+        font-size: 16px;
     }
     button {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
