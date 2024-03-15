@@ -1,36 +1,34 @@
-/* Include the Angkor font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-/* Set default styling for the body */
 body {
     font-family: 'Lobster', sans-serif;
-    font-size: 54px; /* 3 times bigger font size on small screens */
+    font-size: 18px; /* Adjusted for better readability on mobile */
     line-height: 1.6; /* Line height for better readability */
     margin: 0;
     padding: 0;
     background-color: #f8f8f8; /* Light background for contrast */
-    color: transparent; /* Make the text transparent initially */
-    background-clip: text; /* Apply gradient only to the text */
-    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* Rainbow gradient */
+    color: #000; /* Change text color to black */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center; /* Center text horizontally */
 }
 
-/* Styling for headers */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal; /* Angkor font doesn't have bold, using normal weight */
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+button {
+    font-size: 18px; /* Make buttons larger for better mobile interaction */
+    padding: 10px; /* Add some padding for better touch targets */
+    margin-top: 20px; /* Add some space above the button */
 }
 
-h1 {
-    font-size: 56px; /* Adjust heading sizes for mobile */
+/* Ensure text wraps nicely */
+p {
+    width: 90%; /* Use a percentage width to allow for padding */
+    max-width: 600px; /* Max width to prevent lines from being too long on large screens */
 }
 
-h2 {
-    font-size: 56.25px;
-}
-
-/* Center the text */
-.center {
-    text-align: center;
-    border: 3px solid green;
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Smaller font size on small screens for better readability */
+    }
 }
