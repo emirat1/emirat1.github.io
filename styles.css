@@ -1,16 +1,17 @@
-
 /* Include the Angkor font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /* Set default styling for the body */
 body {
-    font-family: 'Angkor', sans-serif;
+    font-family: 'Lobster', sans-serif;
     font-size: 18px; /* Default font size for readability */
     line-height: 1.6; /* Line height for better readability */
     margin: 0;
     padding: 0;
     background-color: #f8f8f8; /* Light background for contrast */
-    color: #333; /* Dark text for readability */
+    color: transparent; /* Make the text transparent initially */
+    background-clip: text; /* Apply gradient only to the text */
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* Rainbow gradient */
 }
 
 /* Styling for headers */
@@ -31,14 +32,14 @@ h2 {
 /* Style adjustments for smaller screens, such as mobile devices */
 @media (max-width: 768px) {
     body {
-        font-size: 16px; /* Smaller font size on small screens */
+        font-size: 54px; /* 3 times bigger font size on small screens */
     }
 
     h1 {
-        font-size: 1.5em; /* Adjust heading sizes for mobile */
+        font-size: 67.5px; /* Adjust heading sizes for mobile */
     }
 
     h2 {
-        font-size: 1.25em;
+        font-size: 56.25px;
     }
 }
