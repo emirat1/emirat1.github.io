@@ -5,37 +5,23 @@
     <script src="https://cdn.jsdelivr.net/npm/fireworks-js/dist/fireworks.min.js"></script>
     <meta charset="UTF-8">
     <title>Jesteś pewien?</title>
-    <style>
-        /* Additional style for the repeating background */
-        #background-image {
-            display: none; /* Hide initially */
-            position: fixed; /* Cover the entire page */
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1; /* Ensure it's behind other content */
-            background-image: url('baby2.jpg'); /* Set the repeating background image */
-            background-repeat: repeat; /* Repeat the background image */
-            background-size: cover; /* Cover the entire area */
-        }
-    </style>
 </head>
 <body>
     <p>Na pewno chcesz wiedzieć?</p>
     <button onclick="showMessage()">TAK</button>
     <p id="message"></p>
-    <!-- Add your image here -->
-    <img id="image" src="baby1.jpg" style="display:none; max-width:100%; height:auto;">
+    <!-- Image 1 -->
+    <img id="image1" src="baby1.jpg" style="display:none; max-width:100%; height:auto;">
+    <!-- Image 2 (initially hidden) -->
+    <img id="image2" src="baby2.jpg" style="display:none; max-width:100%; height:auto;">
     <div id="fireworks-container" style="position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1;"></div>
-    <!-- Background image container -->
-    <div id="background-image"></div>
 
     <script>
     function showMessage() {
         document.getElementById('message').innerHTML = 'Nowy członek rodziny potwierdzony, przewidywany dzień przyjścia - 10/10/2024. Pozdrawiamy Kinia i Bartuś';
-        document.getElementById('image').style.display = 'block'; // Show the image when the message is displayed
-        document.getElementById('background-image').style.display = 'block'; // Show the background image
+        // Show both images
+        document.getElementById('image1').style.display = 'block';
+        document.getElementById('image2').style.display = 'block'; // Now this line will show the second image
 
         // Set up and start the fireworks
         const container = document.getElementById('fireworks-container');
