@@ -4,7 +4,7 @@
 /* Set default styling for the body */
 body {
     font-family: 'Lobster', sans-serif;
-    font-size: 18px; /* Default font size for readability */
+    font-size: 54px; /* 3 times bigger font size on small screens */
     line-height: 1.6; /* Line height for better readability */
     margin: 0;
     padding: 0;
@@ -22,24 +22,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.25em; /* Larger font size for h1 */
+    font-size: 67.5px; /* Adjust heading sizes for mobile */
 }
 
 h2 {
-    font-size: 2em; /* Slightly smaller for h2 */
+    font-size: 56.25px;
 }
 
-/* Style adjustments for smaller screens, such as mobile devices */
-@media (max-width: 768px) {
-    body {
-        font-size: 54px; /* 3 times bigger font size on small screens */
-    }
-
-    h1 {
-        font-size: 67.5px; /* Adjust heading sizes for mobile */
-    }
-
-    h2 {
-        font-size: 56.25px;
-    }
+/* Center the text */
+.center {
+    text-align: center;
+    border: 3px solid green;
 }
